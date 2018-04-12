@@ -44,7 +44,7 @@ Git Reference: master
 
 Context Directory: /
 
-Maven mirror URL: {{NEXUS_URL}}
+Maven mirror URL: http://nexus-nexus.apps.rg.osecloud.com/repository/maven-public
 ....
 
 *REMEMBER:* Check with your instructor the proper URL for the Nexus
