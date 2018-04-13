@@ -106,9 +106,9 @@ Go to Deployment Configuration section and enter the
 following environment variables:
 
 ****
-MYSQL_USER = pricelist
-MYSQL_PASSWORD = pricelist
-MYSQL_DATABASE = pricelist
+ MYSQL_USER = pricelist
+ MYSQL_PASSWORD = pricelist
+ MYSQL_DATABASE = pricelist
 ****
 
 image::images/dbtest_deployment_env.png[image]
