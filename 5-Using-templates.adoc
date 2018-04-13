@@ -161,30 +161,25 @@ deployment is complete, the frontend pod starts running. You will find
 the running pod when you navigate to *Applications->Pods* on the Web
 console.
 
-Now use `curl` to run the database `bootstrap` script
-....
-$ oc project
-Using project "consoleproject-Username" on server "{{CONSOLE_ADDRESS}}".
-
-$ curl -k http://$(oc get route/pricelist -o jsonpath='{.spec.host}')/create_database.php
-Array
-(
-    [0] => 00000
-    [1] =>
-    [2] =>
-)
-
-....
-
-Go ahead and open your application. The URL will be displayed by `oc get route`
-
+Now run the database `bootstrap` script. The URL will be displayed by `oc get route` 
 ....
 $ oc get route
 NAME        HOST/PORT                                                    PATH      SERVICES    PORT       TERMINATION   WILDCARD
 pricelist   pricelist-consoleproject-Username.apps.workshop.osecloud.com 	                   pricelist   8080-tcp                 None
 ....
 
-When you open your application, click on the "Create Record" button and create a record.
+Then open a browser and point to *http://pricelist-consoleproject-Username.apps.workshop.osecloud.com/create_database.php*. You will see following output.
+
+....
+Array
+(
+    [0] => 00000
+    [1] =>
+    [2] =>
+)
+....
+
+Go ahead and open your application. When you open your application, click on the "Create Record" button and create a record.
 Once you added a record, click on "Read Records". The page should look
 like this.
 
